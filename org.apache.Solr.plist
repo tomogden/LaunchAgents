@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>org.apache.Solr</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>java</string>
+    <string>-Dsolr.solr.home=multicore</string>
+    <string>-jar</string>
+    <string>/usr/lib/apache-solr/example/start.jar</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>WorkingDirectory</key>
+  <string>/usr/lib/apache-solr/example/</string>
+  <key>ServiceDescription</key>
+  <string>Apache Solr Server</string>
+  <key>StandardErrorPath</key>
+  <string>/var/log/apache-solr/solr-error.log</string>
+  <key>StandardOutPath</key>
+  <string>/var/log/apache-solr/solr-output.log</string>
+</dict>
+</plist>
